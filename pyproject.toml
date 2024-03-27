@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "service-monitor"
+version = "0.1.0"
+description = "Monitor services over the network"
+authors = ["KerH <keresh3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyzmq = "^25.1.2"
+click = "^8.1.7"
+munch = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+tox = "^4.14.2"
+ipython = "^8.22.2"
+ipdb = "^0.13.13"
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
